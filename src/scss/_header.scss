@@ -1,0 +1,118 @@
+.container__header {
+    padding: 1em;
+    font-size: 1.15rem;
+    background: #fff;
+}
+
+.container__header__utilities {
+    display: flex;
+    justify-content: space-between;
+    border-bottom: 1.2px solid;
+    margin-top: 1em;
+
+    .header__utilities__left {
+        margin-left: 2em;
+        padding-bottom: 5px;
+    }
+
+    .header__utilities__right {
+        margin-right: 2em;
+        padding-bottom: 5px;
+        margin-bottom: 1em;
+
+        &__account {
+            display: flex;
+
+            &--signin {
+                margin-right: 2em;
+                width: 115px;
+                height: 35px;
+                background-color: #846C5B;
+                color: #fff;
+                border: 2px solid $offBlack;
+                border-radius: 1.2em;
+                box-shadow: 1.25px 1.25px .8em 1px $richBlack;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 1rem;
+                transition: 300ms;
+            }
+
+            &--signup {
+                width: 115px;
+                height: 35px;
+                background-color: $offSeaweed;
+                color: #fff;
+                border: 2px solid $offBlack;
+                border-radius: 1.2em;
+                box-shadow: 1.25px 1.25px .8em 1px $richBlack;
+                cursor: pointer;
+                text-transform: uppercase;
+                font-size: 1rem;
+                transition: 300ms;
+            }
+        }
+    }
+}
+
+.container__header__nav {
+    margin-top: 2.5em;
+    position: relative;
+
+    &--list {
+        list-style: none;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 0;
+
+        &-item {
+            display: flex;
+            align-self: center;
+
+            .e-link {
+                text-decoration: none;
+                position: relative;
+                color: $richBlack;
+            }
+
+            i {
+                padding-top: .7em;
+                margin-left: .25em;
+                font-size: .75rem;
+            }
+        }
+
+        img {
+            width: 80px;
+            border: 1px solid;
+            border-radius: 2em;
+            cursor: pointer;
+        }
+    }
+
+    #dropdown {
+        width: 250px;
+        background: #fff;
+        color: $offBlack;
+        position: absolute;
+        z-index: 1;
+        right: 1em;
+        top: 3.5em;
+        border-radius: 7px;
+        display: none;
+        box-shadow: 1px 1px 15px 1px black;
+
+        .accessories__list {
+            list-style: none;
+            padding: 0;
+            margin: .5em 0em .5em 0em;
+            line-height: 1.5em;
+            text-align: center;
+
+            &-item {
+                letter-spacing: .25rem;
+                cursor: pointer;
+            }
+        }
+    }
+}

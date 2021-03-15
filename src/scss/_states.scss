@@ -1,0 +1,225 @@
+@import 'slider', 'homepage', 'globals';
+
+
+// Header states
+.header__utilities__right__account--signin:hover,
+.header__utilities__right__account--signin:focus {
+    transform: scale(1.1);
+    box-shadow: 2.5px 2.5px 1.6em 2px $offBlack;
+}
+
+.header__utilities__right__account--signup:hover,
+.header__utilities__right__account--signup:focus {
+    transform: scale(1.1);
+    box-shadow: 2.5px 2.5px 1.6em 2px $offBlack;
+    color: $offSeaweed;
+    background-color: #fff;
+    border-color: #fff;
+}
+
+.search-bar:focus,
+.search-bar:focus-visible {
+    outline: 5px double $offSeaweed;
+}
+
+.e-link:focus {
+    transform: scale(1.1);
+    letter-spacing: 1.5px;
+}
+
+.e-link::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: $offSeaweed;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 250ms ease-in;
+}
+
+.e-link:hover::after {
+    transform: scaleX(1);
+    transform-origin: left;
+}
+
+// Slider states
+.shopnow:hover,
+.shopnow:focus {
+    box-shadow: 1.5px 1.5px 1.25em 3px $offSeaweed;
+    transform: scale(1.1);
+}
+
+
+// Showcase states
+.showcase__title::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1px;
+    background-color: $offBlack;
+    margin: 2em 0em 2em 0em;
+}
+
+.showcase__display__product:hover .overlay {
+    bottom: 0;
+    height: 100%;
+}
+
+.product:hover .overlay__up {
+    height: 100%;
+}
+
+// Footer states
+.item__anchor:hover,
+.item__anchor:focus {
+    text-decoration: underline;
+    color: $offBlack;
+}
+
+.social_icon:hover,
+.social_icon:focus {
+    color: $offBlack;
+    transform: scale(1.1);
+}
+
+.anchor__disclaimer:hover,
+.anchor__disclaimer:focus {
+    text-decoration: underline;
+}
+
+// Dropdown states
+.accessories__list-item:hover,
+.accessories__list-item:focus {
+    background-color: $offSeaweed;
+    color: #fff;
+}
+
+
+
+// Womenpage states
+// Select states
+.custom-select::after {
+    content:"";
+    width: 0.8em;
+    height: 0.5em;
+    background-color: $metalSeaweed;
+    clip-path: polygon(100% 0%, 0 0%, 50% 100%);
+    grid-area: select;
+    justify-self: end;
+}
+
+.custom-select:focus + .focus {
+    position: absolute;
+    top: -1px;
+    left: -1px;
+    right: -1px;
+    bottom: -1px;
+    border: 2px solid $offBlack;
+    border-radius: inherit;
+}
+
+
+// Grid heading
+.grid_heading::before {
+    content:"";
+    position: absolute;
+    left: 3.5em;
+    height: 3.5px;
+    background: $richBlack;
+    width: 30%;
+}
+.grid_heading::after {
+    content:"";
+    position: absolute;
+    left: 3.5em;
+    height: 3.5px;
+    background: $richBlack;
+    width: 30%;
+    margin-top: 1.25em;
+}
+
+// Card states
+.clothing__products__gridItem:hover {
+    transform: scale(1.1);
+    box-shadow: 1px 1px 10px 2px rgb(61, 61, 61);
+}
+
+.clothing__products__gridItem:hover > .clothing__products__gridItem-display_options {
+    display: flex !important;
+}
+
+.bottom-options:hover {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+// Under Construction placeholder
+// Links
+
+.returnIndex:hover {
+    transform: scale(1.1);
+}
+
+// Contact form
+// Form input
+.form__input:focus {
+    outline: 1px solid; 
+}
+
+#msg_area:focus {
+    outline: 1px solid;
+}
+
+// Form submit btn
+#submit:hover {
+    transform: scale(1.1);
+    background: #fff;
+    color: $offSeaweed;
+    box-shadow: .5px 1px 4px 1px $offBlack;
+}
+
+// Navbar anchors
+// Anchors focused
+#women_anchor,
+#men_anchor,
+#contact {
+    text-transform: uppercase;
+    text-decoration: none;
+    letter-spacing: 1.5px;
+    transform: scale(1.1);
+    color: #002626;
+}
+
+#women_anchor::after,
+#men_anchor::after,
+#contact::after {
+    content:"";
+    position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 1.5px;
+    background-color: $offSeaweed;
+}
+
+// Sitemap anchors
+
+.mainpage:hover,
+.womenpage:hover,
+.menpage:hover,
+.contactpage:hover {
+    transform: scale(1.1);
+}
+
+.mainpage:focus,
+.womenpage:focus,
+.menpage:focus,
+.contactpage:focus {
+    text-transform: uppercase;
+    text-decoration: underline;
+}

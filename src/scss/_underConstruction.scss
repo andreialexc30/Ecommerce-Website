@@ -1,0 +1,61 @@
+.under__construction__master {
+    background: $metalSeaweed;
+    margin: 1.25em 0em;
+
+    .under__construction {
+        background: #fff;
+        padding: 1.5em;
+        clip-path: polygon(100% 0, 100% 74%, 0 100%, 0 24%);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 10em;
+
+        .returnIndex {
+            font-size: 1.75rem;
+            margin-top: 1em;
+            text-decoration: none;
+            text-transform: uppercase;
+            color: $offSeaweed;
+            transition: 250ms ease;
+        }
+
+        &__warning {
+            display: flex;
+            align-items: center;
+
+            i {
+                font-size: 2.5rem;
+                color: $dangerYellow;
+            }
+
+            h1 {
+                font-size: 2rem;
+                text-decoration: underline;
+                margin: 0em .5em;
+            }
+        }
+
+        &__details {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            flex-direction: column;
+            margin-top: 2.5em;
+
+            h1 {
+                font-size: 2.5rem;
+            }
+
+            h2 {
+                font-size: 2.2rem;
+                position: relative;
+
+                i {
+                    color: $offSeaweed;
+                }
+            }
+        }
+    }
+}

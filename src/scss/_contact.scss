@@ -1,0 +1,93 @@
+.contact {
+    background: #fff;
+    margin: 1.25em 0em;
+    border-radius: 0.8em;
+
+
+    .contact__headings {
+        text-align: center;
+
+        h1 {
+            font-size: 2.25rem;
+            margin: 0;
+            padding: 1em 0em;
+        }
+
+        h3 {
+            margin: 0;
+
+            a {
+                color: $richBlack;
+            }
+        }
+    }
+
+    &__form-container {
+        margin: 0 auto;
+        width: 50%;
+        padding: 2em;
+
+
+        form, input{
+            width: 100%;
+        }
+
+        .firstname_lastname {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .firstname {
+                margin-right: .5em;
+            }
+        }
+
+        .email_input,
+        .submit_msg {
+            margin-top: 1em;
+        }
+    }
+}
+
+
+.form__input {
+    margin: .25em 0em;
+    font-size: 1.75rem;
+    border: 1px solid gray;
+    box-shadow: 1px 1px 5px gray;
+    padding: .25em .5em;
+}
+
+#msg_area {
+    width: 100%;
+    height: 50vh;
+    box-shadow: 1px 1px 5px gray;
+    margin: 1em 0em;
+    font-size: 1.5rem;
+}
+
+#submit {
+    height: 35px;
+    width: 125px;
+    margin-right: 30.4em;
+    padding: 0;
+    text-transform: uppercase;
+    border: none;
+    background: $offSeaweed;
+    box-shadow: 1px 2px 8px 2px $offBlack;
+    color: #fff;
+    cursor: pointer;
+    transition: 250ms ease;
+    border-radius: .25em;
+}
+
+.disclaimer {
+    text-align: center;
+    margin: 1em 0em;
+    padding: 2em;
+
+    h3 {
+        margin: 0;
+        text-decoration: underline;
+    }
+}
