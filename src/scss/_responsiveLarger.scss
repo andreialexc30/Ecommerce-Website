@@ -1,0 +1,85 @@
+@import 'responsive';
+
+
+// ** Promoslider
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptops) {
+    .promoslider__shopnow {
+        left: 16.5em !important;
+
+        .shopnow {
+            width: 150px !important;
+            height: 35px !important;
+            font-size: 1.1rem !important;
+        }
+
+        .shopnow__text {
+            font-size: 1.8rem !important;
+        }
+    }
+}
+
+// ** Remaining content
+@media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptops) {
+    // Sponsors
+    .sponsors__container {
+        img {
+            width: 150px !important;
+            height: 130px !important;
+        }
+    }
+
+
+    // Product showcase
+    .showcase__title {
+        h1 {
+            font-size: 2.25rem !important;
+        }
+    }
+
+    .showcase__display__product {
+        width: 250px !important;
+
+        &__text {
+            top: 35% !important;
+            left: 18% !important;
+            font-size: 1.8rem !important;
+        }
+    }
+
+    // Footer
+    
+    .footer__container {
+        .footer__container__main {
+            display: unset;
+    
+            .socials {
+                padding: 1em 2.5em !important;
+            }
+    
+            .helpful {
+                padding: 1em 2em !important;
+    
+                &__container {
+                    padding: 0 !important;
+                }
+            }
+        }
+
+        .below__footer {
+            flex-direction: column;
+
+            &__hours {
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+
+                &__list {
+                    padding: 0 !important;
+                }
+            }
+        }
+    }
+
+
+}

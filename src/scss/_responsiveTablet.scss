@@ -1,0 +1,270 @@
+@import 'responsive';
+
+// ** Header & Footer
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    // Header
+    .container__header {
+        font-size: 1rem;
+
+        .header__utilities__left {
+            margin-left: 0em;
+        }
+
+        .header__utilities__right {
+            margin-bottom: 0em;
+            margin-right: 1em;
+        }
+
+        .container__header__nav--list {
+            margin: 0;
+        }
+    }
+
+    // Footer
+    .footer__container__main {
+        padding: 0;
+        flex-direction: column;
+
+        .socials__list {
+            justify-content: space-evenly !important;
+            margin: 1em 0em !important;
+        }
+
+        .helpful {
+            text-align: center;
+            margin-bottom: 2em;
+
+            &__container {
+                padding: 0;
+            }
+        }
+    }
+
+    .below__footer {
+        flex-direction: column;
+        margin: 0 !important;
+
+        &__hours {
+            text-align: center;
+
+            h1 {
+                font-size: 1.8rem !important;
+            }
+
+            &__list {
+                padding: 0;
+            }
+        }
+
+        &__payment {
+            padding: 0 !important;
+            margin-top: 2.5em;
+        }
+    }
+
+    // Sitemap 
+    .sitemap {
+        border-bottom-right-radius: 25em !important;
+
+        h1 {
+            padding: 1em 0em !important;
+            font-size: 2.2rem;
+        }
+
+        &_box_homepage {
+            margin: 0 !important;
+            padding: 1em !important;
+        }
+
+        .mainpage {
+            font-size: 1.8rem !important;
+        }
+
+        &_box_availablePages {
+            margin: 1em 0em !important;
+        }
+
+        .available_pages {
+            flex-direction: column;
+        }
+
+        &_box_comingSoonPages {
+            margin: 0 !important;
+            margin-top: 2em !important;
+            padding-bottom: 5.5em;
+        }
+    }
+}
+
+
+// ** Homepage
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    .promoslider {
+        max-height: 50vh;
+        display: none;
+
+        .img-sliderpromo {
+            height: 50vh;
+
+            img {
+                height: 99%;
+            }
+        }
+
+        &__shopnow {
+            bottom: 2.5em !important;
+            left: 9.25em !important;
+
+            .shopnow {
+                width: 125px !important;
+                height: 30px !important;
+                font-size: 1rem !important;
+            }
+
+            .shopnow__text {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .dot {
+            height: 10px !important;
+            width: 10px !important;
+        }
+    }
+
+    body .sponsors__logo {
+        width: 150px;
+        height: 125px;
+    }
+
+    .showcase__display__product {
+        margin: 0 1em;
+        width: 200px;
+    }
+
+    .showcase__display__product__text {
+        font-size: 1.25rem;
+        top: 35%;
+        left: 25%;
+    }
+
+    .showcase__description {
+        margin-top: 5em;
+        flex-direction: column;
+        align-items: center;
+
+        &__all {
+            margin: 0;
+
+            h1 {
+                font-size: 2rem !important;
+            }
+        }
+    }
+}
+
+// ** Women & Men Page
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    .clothing__products__container {
+        justify-content: center !important;
+        align-items: center;
+
+        .clothing__products__container__leftNav {
+            display: none;
+        }
+
+        &__rightGrid {
+            margin-left: unset;
+
+            .grid_heading::before,
+            .grid_heading::after {
+                position: unset;
+            }
+
+            .grid_heading {
+                font-size: 1.8rem !important;
+                margin: 0 !important;
+                width: 100%;
+                text-align: center;
+            }
+
+            &-grid {
+                grid-template-columns: 1fr 1fr !important;
+
+                .clothing__products__gridItem-display_options {
+                    display: flex !important;
+                }
+            }
+        }
+    }
+}
+
+// ** Under construction page
+
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    .under__construction {
+        clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%) !important;
+        padding: 0 !important;
+
+        .under__construction__warning {
+            text-align: center;
+            margin-top: 5em;
+            padding: 0 1.5em;
+
+            h1 {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .under__construction__details {
+            text-align: center;
+            padding: 0 1em;
+
+            h1 {
+                font-size: 2rem !important;
+            }
+
+            h2 {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .returnIndex {
+            margin-top: 0em !important;
+            margin-bottom: 1.5em;
+            font-size: 1.75rem !important;
+        }
+    }
+}
+
+// ** Form page styling
+@media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
+    .contact__headings {
+        margin-bottom: 1em;
+
+        h1 {
+            font-size: 1.6rem !important;
+        }
+    }
+
+    .contact__form-container {
+        width: unset;
+        padding: 1em;
+    }
+
+    .form__input {
+        font-size: 1rem;
+    }
+
+    .disclaimer {
+        padding: 1em 1.5em;
+    }
+
+    #msg_area {
+        height: 25vh !important;
+    }
+
+    #submit {
+        margin-right: 0em !important;
+    }
+}

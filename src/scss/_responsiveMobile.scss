@@ -119,6 +119,37 @@
             }
         }
     }
+
+    // Sitemap
+    .sitemap {
+        h1 {
+            padding: 1em 0em !important;
+            font-size: 2.2rem;
+        }
+
+        &_box_homepage {
+            margin: 0 !important;
+            padding: 1em !important;
+        }
+
+        .mainpage {
+            font-size: 1.8rem !important;
+        }
+
+        &_box_availablePages {
+            margin: 1em 0em !important;
+        }
+
+        .available_pages {
+            flex-direction: column;
+        }
+
+        &_box_comingSoonPages {
+            margin: 0 !important;
+            margin-top: 2em !important;
+            padding-bottom: 5.5em;
+        }
+    }
 }
 
 // ** Homepage mobile styling
@@ -173,6 +204,11 @@
         &__product {
             max-width: 200px;
             max-height: 325px;
+            margin: 1em 0em !important;
+
+            img {
+                height: 325px;
+            }
 
             &__text {
                 font-size: 1.25rem;
@@ -188,7 +224,7 @@
         margin-top: 2.5em;
 
         &__all {
-            margin: 1em 1.25em;
+            margin: 1em 1.25em !important;
 
             h1 {
                 font-size: 2rem;
@@ -214,7 +250,7 @@
         }
 
         .grid_heading {
-            font-size: 1.25rem;
+            font-size: 1.75rem;
             text-align: center;
         }
 
@@ -224,6 +260,7 @@
 
         .clothing__products__gridItem-display_options {
             display: flex !important;
+            font-size: 1rem !important;
         }
 
         @media (min-width: 25em) and (max-width: $breakpoint-mobile) {
@@ -231,5 +268,75 @@
                 grid-template-columns: 1fr 1fr;
             }
         }
+    }
+}
+
+// ** Under construction page styling 
+
+@media (max-width: $breakpoint-mobile) {
+    .under__construction {
+        clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%) !important;
+        padding: 0 !important;
+
+        .under__construction__warning {
+            text-align: center;
+            margin-top: 5em;
+            padding: 0 1.5em;
+
+            h1 {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .under__construction__details {
+            text-align: center;
+            padding: 0 1em;
+
+            h1 {
+                font-size: 2rem !important;
+            }
+
+            h2 {
+                font-size: 1.8rem !important;
+            }
+        }
+
+        .returnIndex {
+            margin-top: 0em !important;
+            margin-bottom: 1.5em;
+            font-size: 1.75rem !important;
+        }
+    }
+}
+
+// ** Form page styling
+@media (max-width: $breakpoint-mobile) {
+    .contact__headings {
+        margin-bottom: 1em;
+
+        h1 {
+            font-size: 1.6rem !important;
+        }
+    }
+
+    .contact__form-container {
+        width: unset;
+        padding: 1em;
+    }
+
+    .form__input {
+        font-size: 1rem;
+    }
+
+    .disclaimer {
+        padding: 1em 1.5em;
+    }
+
+    #msg_area {
+        height: 25vh !important;
+    }
+
+    #submit {
+        margin-right: 0em !important;
     }
 }
