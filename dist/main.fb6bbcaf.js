@@ -122,6 +122,11 @@ var dropdown = document.querySelector('.dropdown__menu');
 var menDisplay = document.getElementById('display__product-Men');
 var womenDisplay = document.getElementById('display__product-Women');
 var childrenDisplay = document.getElementById('display__product-Children');
+var burgerMenu = document.getElementById('hamburger');
+var navMenu = document.getElementById('nav-ul');
+hamburger.addEventListener('click', function () {
+  navMenu.classList.toggle('show');
+});
 menDisplay.addEventListener('mouseenter', function () {
   var hiddenMen = document.getElementById('text__product-Men');
   hiddenMen.style.display = 'none';
@@ -178,7 +183,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "51259" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60676" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};

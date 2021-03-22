@@ -36,6 +36,14 @@
         margin-right: 2em;
         padding-bottom: 5px;
 
+        .mobile_nav {
+            display: none;
+
+            nav {
+                display: none;
+            }
+        }
+
         &__account {
             display: flex;
             flex-direction: column;
@@ -60,7 +68,7 @@
             }
 
             &--signup {
-                width: 115px;
+                width: 135px;
                 height: 35px;
                 background-color: $offSeaweed;
                 color: #fff;

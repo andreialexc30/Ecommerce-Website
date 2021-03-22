@@ -200,7 +200,6 @@
 }
 
 // ** Under construction page
-
 @media (min-width: $breakpoint-mobile) and (max-width: $breakpoint-tablet) {
     .under__construction {
         clip-path: polygon(100% 0, 100% 90%, 0 100%, 0 10%) !important;

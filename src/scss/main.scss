@@ -47,6 +47,10 @@ body {
   }
 }
 
+#nav-ul.show {
+  display: flex;
+}
+
 // Icons
 .shop_cart {
   width: 24px;

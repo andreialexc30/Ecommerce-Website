@@ -2,6 +2,12 @@ const dropdown = document.querySelector('.dropdown__menu');
 const menDisplay = document.getElementById('display__product-Men');
 const womenDisplay = document.getElementById('display__product-Women');
 const childrenDisplay = document.getElementById('display__product-Children');
+const burgerMenu = document.getElementById('hamburger');
+const navMenu = document.getElementById('nav-ul');
+
+hamburger.addEventListener('click', () => {
+    navMenu.classList.toggle('show');
+})
 
 menDisplay.addEventListener('mouseenter', () => {
     const hiddenMen = document.getElementById('text__product-Men');

@@ -1,6 +1,5 @@
 @import 'responsive';
 
-
 // ** Promoslider
 @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptops) {
     .promoslider__shopnow {
@@ -18,7 +17,7 @@
     }
 }
 
-// ** Remaining content
+// ** Rest of content
 @media (min-width: $breakpoint-tablet) and (max-width: $breakpoint-laptops) {
     // Sponsors
     .sponsors__container {
@@ -47,7 +46,6 @@
     }
 
     // Footer
-    
     .footer__container {
         .footer__container__main {
             display: unset;
@@ -80,6 +78,4 @@
             }
         }
     }
-
-
 }
