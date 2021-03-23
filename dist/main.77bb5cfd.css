@@ -47,7 +47,6 @@
   margin-bottom: 1.5em;
 }
 .container__header__utilities .header__utilities__right__account--signin {
-  margin-right: 2em;
   width: 135px;
   height: 35px;
   background-color: #846C5B;
@@ -304,8 +303,8 @@
   padding-top: 1em;
 }
 .showcase__display__product {
-  max-width: 400px;
-  max-height: 650px;
+  max-width: 350px;
+  max-height: 600px;
   margin-bottom: 1.5em;
   position: relative;
 }
@@ -583,8 +582,8 @@
   padding-top: 1em;
 }
 .showcase__display__product {
-  max-width: 400px;
-  max-height: 650px;
+  max-width: 350px;
+  max-height: 600px;
   margin-bottom: 1.5em;
   position: relative;
 }
@@ -1277,8 +1276,14 @@
     margin-right: 0em;
     margin-top: 1em;
     display: flex;
+    flex-direction: column;
     justify-content: space-between;
     width: 100%;
+  }
+  .container__header__utilities .header__utilities__right button {
+    align-self: center;
+    width: 150px !important;
+    height: 40px !important;
   }
   .container__header__utilities .header__utilities__right__account {
     height: 100px !important;
@@ -1293,13 +1298,19 @@
     width: 100%;
   }
   .container__header__utilities .header__utilities__right .mobile_nav__burger-Menu .mobile_nav-list {
+    width: 300px;
     background: #388697;
     color: white;
     border-radius: 1em;
     list-style: none;
     padding: 1em 0em;
     text-align: center;
-    line-height: 1.75em;
+    line-height: 2.25em;
+  }
+  .container__header__utilities .header__utilities__right .mobile_nav__burger-Menu .mobile_nav-list a {
+    text-decoration: none;
+    color: #fff;
+    text-transform: capitalize;
   }
   .container__header__utilities .header__utilities__right .mobile_nav__burger {
     width: 3.5em;
@@ -1878,6 +1889,7 @@ body {
 
 #nav-ul.show {
   display: flex;
+  justify-content: center;
 }
 
 .shop_cart {
