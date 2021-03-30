@@ -74,7 +74,7 @@
         <h1>filters</h1>
         <!-- Search for item -->
         <label for="search">Search for an item</label>
-        <input type="text" placeholder="What do you need?" aria-label="search" class="search-bar__item" />
+        <input type="text" placeholder="What do you need?" id="search" aria-label="search" class="search-bar__item" />
         <!-- Filter by price -->
         <div class="custom-select">
           <select name="price" id="price-select">
@@ -92,35 +92,35 @@
           <div class="top__ul">
             <h1>Filter by size</h1>
             <ul class="filter-by-size">
-              <li class="filter-by-size__item"><input type="checkbox" class="item__checkbox" name="size"><label for="size">XS (Very Small)</label></li>
-              <li class="filter-by-size__item"><input type="checkbox" class="item__checkbox" name="size"><label for="size">S (Small)</label></li>
-              <li class="filter-by-size__item"><input type="checkbox" class="item__checkbox" name="size"><label for="size">M (Medium)</label></li>
-              <li class="filter-by-size__item"><input type="checkbox" class="item__checkbox" name="size"><label for="size">L (Large)</label></li>
-              <li class="filter-by-size__item"><input type="checkbox" class="item__checkbox" name="size"><label for="size">XL (VeryLarge)</label></li>
-              <li class="filter-by-size__item"><input type="checkbox" class="item__checkbox" name="size"><label for="size">XXL (Very-very Large)</label></li>
+              <li class="filter-by-size__item"><input type="checkbox" id="size-1" class="item__checkbox" name="size"><label for="size-1">XS (Very Small)</label></li>
+              <li class="filter-by-size__item"><input type="checkbox" id="size-2" class="item__checkbox" name="size"><label for="size-2">S (Small)</label></li>
+              <li class="filter-by-size__item"><input type="checkbox" id="size-3" class="item__checkbox" name="size"><label for="size-3">M (Medium)</label></li>
+              <li class="filter-by-size__item"><input type="checkbox" id="size-4" class="item__checkbox" name="size"><label for="size-4">L (Large)</label></li>
+              <li class="filter-by-size__item"><input type="checkbox" id="size-5" class="item__checkbox" name="size"><label for="size-5">XL (VeryLarge)</label></li>
+              <li class="filter-by-size__item"><input type="checkbox" id="size-6" class="item__checkbox" name="size"><label for="size-6">XXL (Very-very Large)</label></li>
             </ul>
           </div>
           <!-- Filter by type -->
           <div class="med__ul">
             <h1>Filter by type</h1>
             <ul class="filter-by-type">
-              <li class="filter-by-type__item"><input type="radio" class="item__checkbox" name="type"><label for="type">Casual</label></li>
-              <li class="filter-by-type__item"><input type="radio" class="item__checkbox" name="type"><label for="type">Sport</label></li>
-              <li class="filter-by-type__item"><input type="radio" class="item__checkbox" name="type"><label for="type">Formal</label></li>
-              <li class="filter-by-type__item"><input type="radio" class="item__checkbox" name="type"><label for="type">Footwear</label></li>
-              <li class="filter-by-type__item"><input type="radio" class="item__checkbox" name="type"><label for="type">Accessories</label></li>
-              <li class="filter-by-type__item"><input type="radio" class="item__checkbox" name="type"><label for="type">Swimwear</label></li>
+              <li class="filter-by-type__item"><input type="radio" id="style-1" class="item__checkbox" name="type"><label for="style-1">Casual</label></li>
+              <li class="filter-by-type__item"><input type="radio" id="style-2" class="item__checkbox" name="type"><label for="style-2">Sport</label></li>
+              <li class="filter-by-type__item"><input type="radio" id="style-3" class="item__checkbox" name="type"><label for="style-3">Formal</label></li>
+              <li class="filter-by-type__item"><input type="radio" id="style-4" class="item__checkbox" name="type"><label for="style-4">Footwear</label></li>
+              <li class="filter-by-type__item"><input type="radio" id="style-5" class="item__checkbox" name="type"><label for="style-5">Accessories</label></li>
+              <li class="filter-by-type__item"><input type="radio" id="style-6" class="item__checkbox" name="type"><label for="style-6">Swimwear</label></li>
             </ul>
           </div>
           <!-- Filter by brand -->
           <div class="bottom__ul">
             <h1>Filter by brand</h1>
             <ul class="filter-by-brand">
-              <li class="filter-by-brand__item"><input type="checkbox" class="item__checkbox" name="brand"><label for="brand">Nike</label></li>
-              <li class="filter-by-brand__item"><input type="checkbox" class="item__checkbox" name="brand"><label for="brand">Puma</label></li>
-              <li class="filter-by-brand__item"><input type="checkbox" class="item__checkbox" name="brand"><label for="brand">Adidas</label></li>
-              <li class="filter-by-brand__item"><input type="checkbox" class="item__checkbox" name="brand"><label for="brand">Armani</label></li>
-              <li class="filter-by-brand__item"><input type="checkbox" class="item__checkbox" name="brand"><label for="brand">Fila</label></li>
+              <li class="filter-by-brand__item"><input type="checkbox" id="brand-1" class="item__checkbox" name="brand"><label for="brand-1">Nike</label></li>
+              <li class="filter-by-brand__item"><input type="checkbox" id="brand-2" class="item__checkbox" name="brand"><label for="brand-2">Puma</label></li>
+              <li class="filter-by-brand__item"><input type="checkbox" id="brand-3" class="item__checkbox" name="brand"><label for="brand-3">Adidas</label></li>
+              <li class="filter-by-brand__item"><input type="checkbox" id="brand-4" class="item__checkbox" name="brand"><label for="brand-4">Armani</label></li>
+              <li class="filter-by-brand__item"><input type="checkbox" id="brand-5" class="item__checkbox" name="brand"><label for="brand-5">Fila</label></li>
             </ul>
           </div>
         </div>
@@ -252,7 +252,7 @@
             <ul class="tnc__conditions__list">
               <li class="tnc__conditions__list-item"><a href="#" class="item__anchor">About</a></li>
               <li class="tnc__conditions__list-item"><a href="#" class="item__anchor">Help</a></li>
-              <li class="tnc__conditions__list-item"><a href="#" class="item__anchor">Terms &amp Conditions</a></li>
+              <li class="tnc__conditions__list-item"><a href="#" class="item__anchor">Terms &amp; Conditions</a></li>
               <li class="tnc__conditions__list-item"><a href="#" class="item__anchor">Contact</a></li>
             </ul>
           </div>
@@ -275,14 +275,14 @@
             <li class="helpful__container__list-item"><a href="#" class="item__anchor">Privacy Policy</a></li>
             <li class="helpful__container__list-item"><a href="#" class="item__anchor">Terms of Use</a></li>
             <li class="helpful__container__list-item"><a href="#" class="item__anchor">Terms of Sale</a></li>
-            <li class="helpful__container__list-item"><a href="#" class="item__anchor">Report Abuse &amp Takedown Policy</a></li>
+            <li class="helpful__container__list-item"><a href="#" class="item__anchor">Report Abuse &amp; Takedown Policy</a></li>
           </ul>
         </div>
         <!-- Information -->
         <div class="helpful__container">
           <h1>Information</h1>
           <ul class="helpful__container__list">
-            <li class="helpful__container__list-item"><a href="#" class="item__anchor">Address:&nbsp 123 Main St., CA</a></li>
+            <li class="helpful__container__list-item"><a href="#" class="item__anchor">Address:&nbsp; 123 Main St., CA</a></li>
             <li class="helpful__container__list-item"><a href="#" class="item__anchor">About Us</a></li>
             <li class="helpful__container__list-item"><a href="#" class="item__anchor">Careers</a></li>
             <li class="helpful__container__list-item"><a href="sitemap.html" class="item__anchor">Sitemap</a></li>
@@ -293,8 +293,8 @@
         <div class="helpful__container">
           <h1>Support</h1>
           <ul class="helpful__container__list">
-            <li class="helpful__container__list-item"><a href="mailto: example@mail.com" class="item__anchor">company@mail.com</a></li>
-            <li class="helpful__container__list-item"><a href="tel:+555-555-555" class="item__anchor">Customer Service:&nbsp 555-555-555</a></li>
+            <li class="helpful__container__list-item"><a href="mailto:example@mail.com" class="item__anchor">company@mail.com</a></li>
+            <li class="helpful__container__list-item"><a href="tel:+555-555-555" class="item__anchor">Customer Service:&nbsp; 555-555-555</a></li>
             <li class="helpful__container__list-item"><a href="#" class="item__anchor">Money Back Policy</a></li>
             <li class="helpful__container__list-item"><a href="#" class="item__anchor">Frequently Asked Questions</a></li>
           </ul>
@@ -306,16 +306,16 @@
       <div class="below__footer__hours">
         <h1>Working Hours</h1>
         <ul class="below__footer__hours__list">
-          <li class="below__footer__hours__list-item">Monday:&nbsp 10:00 - 19:00</li>
-          <li class="below__footer__hours__list-item">Tuesday:&nbsp 10:00 - 19:00</li>
-          <li class="below__footer__hours__list-item">Wednesday:&nbsp 9:30 - 18:00</li>
-          <li class="below__footer__hours__list-item">Thursday:&nbsp 10:00 - 19:00</li>
-          <li class="below__footer__hours__list-item">Friday:&nbsp 11:00 - 18:00</li>
-          <li class="below__footer__hours__list-item">Saturday / Sunday:&nbsp Closed</li>
+          <li class="below__footer__hours__list-item">Monday:&nbsp; 10:00 - 19:00</li>
+          <li class="below__footer__hours__list-item">Tuesday:&nbsp; 10:00 - 19:00</li>
+          <li class="below__footer__hours__list-item">Wednesday:&nbsp; 9:30 - 18:00</li>
+          <li class="below__footer__hours__list-item">Thursday:&nbsp; 10:00 - 19:00</li>
+          <li class="below__footer__hours__list-item">Friday:&nbsp; 11:00 - 18:00</li>
+          <li class="below__footer__hours__list-item">Saturday / Sunday:&nbsp; Closed</li>
         </ul>
       </div>
       <div class="below__footer__payment">
-        <h1>Available payment methods:&nbsp <span>Cash, Credit Card, Crypto Currency</span></h1>
+        <h1>Available payment methods:&nbsp; <span>Cash, Credit Card, Crypto Currency</span></h1>
         <ul class="below__footer__payment__list">
           <li class="below__footer__payment__list-item"><i class="fab fa-cc-visa"></i></li>
           <li class="below__footer__payment__list-item"><i class="fab fa-cc-paypal"></i></li>
@@ -323,7 +323,7 @@
           <li class="below__footer__payment__list-item"><i class="fab fa-cc-amex"></i></li>
           <li class="below__footer__payment__list-item"><i class="fab fa-cc-apple-pay"></i></li>
           <li class="below__footer__payment__list-item"><i class="fab fa-google-pay"></i></li>
-          <li class="below__footer__payment__list-item"><i class="fab fa-btc"></i></i></li>
+          <li class="below__footer__payment__list-item"><i class="fab fa-btc"></i></li>
         </ul>
         <div class="below__footer__disclaimer">
           <ul>
@@ -331,7 +331,7 @@
             <li>Original web design by Andrei Caia</li>
             <li>Icons provided by <a href="https://fontawesome.com/" class="anchor__disclaimer">Font-Awesome</a></li>
             <li>Free use images from <a href="https://unsplash.com/" class="anchor__disclaimer">unsplash.com</a></li>
-            <li>&copy 2021 - Copyright Andrei Caia</li>
+            <li>&copy; 2021 - Copyright Andrei Caia</li>
             <li id="disclaimer">This website is just for presentation. None of the used brands are associated with this web page or it's creator.</li>
           </ul>
         </div>
