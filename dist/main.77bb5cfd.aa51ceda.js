@@ -117,115 +117,79 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/dropdown.js":[function(require,module,exports) {
-var dropdown = document.querySelector('.dropdown__menu');
-dropdown.addEventListener('click', function () {
-  var dropdownMenu = document.getElementById('dropdown');
-  dropdownMenu.style.display = dropdownMenu.style.display === 'block' ? 'none' : 'block';
-});
-var burgerMenu = document.getElementById('hamburger');
-var navMenu = document.getElementById('nav-ul');
-hamburger.addEventListener('click', function () {
-  navMenu.classList.toggle('show');
-}); // const menu = [
-//     {
-//         id: 1,
-//         category: 'accessories',
-//         num: '1',
-//         alt: 'accessories',
-//         price: '$60',
-//         brand: 'Armani',
-//         offer: '10% Discount'
-//     },
-//     {
-//         id: 2,
-//         category: 'casual',
-//         num: '2',
-//         alt: 'shirt',
-//         price: '$60',
-//         brand: 'Puma',
-//         offer: '10% Discount'
-//     },
-//     {
-//         id: 3,
-//         category: 'formal',
-//         num: '3',
-//         alt: 'suit',
-//         price: '$60',
-//         brand: 'Armani',
-//         offer: '10% Discount'
-//     },
-//     {
-//         id: 4,
-//         category: 'accessories',
-//         num: '4',
-//         alt: 'sneakers',
-//         price: '$60',
-//         brand: 'Nike',
-//         offer: '10% Discount'
-//     },
-//     {
-//         id: 5,
-//         category: 'formal',
-//         num: '5',
-//         alt: 'formal',
-//         price: '$60',
-//         brand: 'Armani',
-//         offer: '10% Discount'
-//     },
-//     {
-//         id: 6,
-//         category: 'casual',
-//         num: '6',
-//         alt: 'hoodie',
-//         price: '$60',
-//         brand: 'Adidas',
-//         offer: '10% Discount'
-//     },
-//     {
-//         id: 7,
-//         category: 'sport',
-//         num: '7',
-//         alt: 'sport',
-//         price: '$60',
-//         brand: 'Fila',
-//         offer: '10% Discount'
-//     },
-//     {
-//         id: 8,
-//         category: 'casual',
-//         num: '8',
-//         alt: 'jacket',
-//         price: '$60',
-//         brand: 'Nike',
-//         offer: '10% Discount'
-//     }
-// ]
-// const clothingGrid = document.querySelector('.clothing__products__container__rightGrid-grid')
-// window.addEventListener('DOMContentLoaded', () => {
-//     displayClothingItems(menu)
-// })
-// function displayClothingItems(items) {
-//     let displayItems = items.map((item) => {
-//         return `
-//         <div class="clothing__products__gridItem">
-//             <img src="../assets/menclothing1.webp" alt=${item.alt}>
-//             <div class="clothing__products__gridItem-display_options">
-//             <div class="options_top">
-//                 <span class="product__options top-options">${item.price}</span>
-//                 <span class="product__options top-options">${item.brand}</span>
-//                 <span class="product__options top-options">${item.offer}</span>
-//             </div>
-//             <div class="options_bottom">
-//                 <a href="#" class="product__options bottom-options">View</a>
-//             </div>
-//             </div>
-//       </div>`
-//     })
-//     displayItems = displayItems.join('')
-//     clothingGrid.innerHTML = displayItems;
-// }
-},{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
+})({"../node_modules/parcel-bundler/src/builtins/bundle-url.js":[function(require,module,exports) {
+var bundleURL = null;
+
+function getBundleURLCached() {
+  if (!bundleURL) {
+    bundleURL = getBundleURL();
+  }
+
+  return bundleURL;
+}
+
+function getBundleURL() {
+  // Attempt to find the URL of the current script and use that as the base URL
+  try {
+    throw new Error();
+  } catch (err) {
+    var matches = ('' + err.stack).match(/(https?|file|ftp|chrome-extension|moz-extension):\/\/[^)\n]+/g);
+
+    if (matches) {
+      return getBaseURL(matches[0]);
+    }
+  }
+
+  return '/';
+}
+
+function getBaseURL(url) {
+  return ('' + url).replace(/^((?:https?|file|ftp|chrome-extension|moz-extension):\/\/.+)?\/[^/]+(?:\?.*)?$/, '$1') + '/';
+}
+
+exports.getBundleURL = getBundleURLCached;
+exports.getBaseURL = getBaseURL;
+},{}],"../node_modules/parcel-bundler/src/builtins/css-loader.js":[function(require,module,exports) {
+var bundle = require('./bundle-url');
+
+function updateLink(link) {
+  var newLink = link.cloneNode();
+
+  newLink.onload = function () {
+    link.remove();
+  };
+
+  newLink.href = link.href.split('?')[0] + '?' + Date.now();
+  link.parentNode.insertBefore(newLink, link.nextSibling);
+}
+
+var cssTimeout = null;
+
+function reloadCSS() {
+  if (cssTimeout) {
+    return;
+  }
+
+  cssTimeout = setTimeout(function () {
+    var links = document.querySelectorAll('link[rel="stylesheet"]');
+
+    for (var i = 0; i < links.length; i++) {
+      if (bundle.getBaseURL(links[i].href) === bundle.getBundleURL()) {
+        updateLink(links[i]);
+      }
+    }
+
+    cssTimeout = null;
+  }, 50);
+}
+
+module.exports = reloadCSS;
+},{"./bundle-url":"../node_modules/parcel-bundler/src/builtins/bundle-url.js"}],"../dist/main.77bb5cfd.css":[function(require,module,exports) {
+var reloadCSS = require('_css_loader');
+
+module.hot.dispose(reloadCSS);
+module.hot.accept(reloadCSS);
+},{"_css_loader":"../node_modules/parcel-bundler/src/builtins/css-loader.js"}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
 var OldModule = module.bundle.Module;
@@ -253,7 +217,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "59861" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60333" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -429,5 +393,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/dropdown.js"], null)
-//# sourceMappingURL=/dropdown.76635db9.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js"], null)
+//# sourceMappingURL=/main.77bb5cfd.aa51ceda.js.map
