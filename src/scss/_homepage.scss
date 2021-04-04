@@ -63,7 +63,7 @@
                 font-size: 2rem;
                 top: 40%;
                 left: 30%;
-                -webkit-text-stroke: 1px $richBlack;
+                text-shadow: 2.5px 2.5px $richBlack;
                 text-transform: uppercase;
 
                 .men_text {
@@ -75,8 +75,7 @@
                 height: 100%;
                 width: 100%;
                 display: block;
-                border: 2px solid $richBlack;
-                box-shadow: 1.5px 1.5px 8px $richBlack;
+                box-shadow: .1rem .1rem 1rem $richBlack;
             }
 
             .overlay {
