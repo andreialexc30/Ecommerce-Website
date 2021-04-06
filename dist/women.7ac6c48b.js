@@ -117,32 +117,83 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/slider.js":[function(require,module,exports) {
-var slideIndex = 0;
-displaySlides(slideIndex); // Displays slides in carousel
+})({"js/women.js":[function(require,module,exports) {
+var clothingGrid = document.querySelector('.clothing__products__container__rightGrid-grid');
+window.addEventListener('DOMContentLoaded', function () {
+  displayWomenItems(arrayWomen);
+});
+var arrayWomen = [{
+  id: 1,
+  category: 'swimwear',
+  img: '..\\dist\\womenclothing1.6cbb6a3c.webp',
+  alt: 'swimwear',
+  price: '$60',
+  brand: 'Zara',
+  offer: '10% Discount'
+}, {
+  id: 2,
+  category: 'formal',
+  img: '..\\dist\\womenclothing2.8b35b446.webp',
+  alt: 'dress',
+  price: '$60',
+  brand: 'Prada',
+  offer: '10% Discount'
+}, {
+  id: 3,
+  category: 'casual',
+  img: '..\\dist\\womenclothing3.a5ccb2ac.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Prada',
+  offer: '10% Discount'
+}, {
+  id: 4,
+  category: 'footwear',
+  img: '..\\dist\\womenclothing4.6d7cecf9.webp',
+  alt: 'sneakers',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}, {
+  id: 5,
+  category: 'accessories',
+  img: '..\\dist\\womenclothing5.1a69849e.webp',
+  alt: 'accessories',
+  price: '$60',
+  brand: 'Chanel',
+  offer: '10% Discount'
+}, {
+  id: 6,
+  category: 'casual',
+  img: '..\\dist\\womenclothing6.f0e1a274.webp',
+  alt: 'coat',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 7,
+  category: 'casual',
+  img: '..\\dist\\womenclothing7.ad8d5908.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 8,
+  category: 'casual',
+  img: '..\\dist\\womenclothing8.8a89324a.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}];
 
-function displaySlides() {
-  var i;
-  var slides = document.getElementsByClassName("img-sliderpromo");
-  var dots = document.getElementsByClassName("dot"); // Increments each slide and sets their display to none
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-
-  slideIndex++; // Resets the carousel once it goes past the number of images in it
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace('active', '');
-  }
-
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
-  setTimeout(displaySlides, 10000);
+function displayWomenItems(women) {
+  var displayWomenItems = women.map(function (women) {
+    return "\n        <div class=\"clothing__products__gridItem\">\n            <img src=".concat(women.img, " alt=").concat(women.alt, ">\n            <div class=\"clothing__products__gridItem-display_options\">\n                <div class=\"options_top\">\n                    <span class=\"product__options top-options\">").concat(women.price, "</span>\n                    <span class=\"product__options top-options\">").concat(women.brand, "</span>\n                    <span class=\"product__options top-options\">").concat(women.offer, "</span>\n                </div>\n                <div class=\"options_bottom\">\n                    <a href=\"#\" class=\"product__options bottom-options\">View</a>\n                </div>\n            </div>\n        </div>");
+  });
+  displayWomenItems = displayWomenItems.join('');
+  clothingGrid.innerHTML = displayWomenItems;
 }
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -348,5 +399,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/slider.js"], null)
-//# sourceMappingURL=/slider.d16eec5e.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/women.js"], null)
+//# sourceMappingURL=/women.7ac6c48b.js.map
