@@ -23,7 +23,7 @@ const arrayMen = [
     {
         id: 1,
         category: 'accessories',
-        img: 'dist\\menclothing1.09ed23d3.webp',
+        img: '..\\dist\\menclothing1.09ed23d3.webp',
         alt: 'accessories',
         price: '$60',
         brand: 'Armani',
@@ -32,7 +32,7 @@ const arrayMen = [
     {
         id: 2,
         category: 'casual',
-        img: 'dist\\menclothing2.034c99ef.webp',
+        img: '..\\dist\\menclothing2.034c99ef.webp',
         alt: 'shirt',
         price: '$60',
         brand: 'Puma',
@@ -41,7 +41,7 @@ const arrayMen = [
     {
         id: 3,
         category: 'formal',
-        img: 'dist\\menclothing3.1dc1c705.webp',
+        img: '..\\dist\\menclothing3.1dc1c705.webp',
         alt: 'suit',
         price: '$60',
         brand: 'Armani',
@@ -50,7 +50,7 @@ const arrayMen = [
     {
         id: 4,
         category: 'footwear',
-        img: 'dist\\menclothing4.6e65cc79.webp',
+        img: '..\\dist\\menclothing4.6e65cc79.webp',
         alt: 'sneakers',
         price: '$60',
         brand: 'Nike',
@@ -59,7 +59,7 @@ const arrayMen = [
     {
         id: 5,
         category: 'formal',
-        img: 'dist\\menclothing5.86aeaf2a.webp',
+        img: '..\\dist\\menclothing5.86aeaf2a.webp',
         alt: 'formal',
         price: '$60',
         brand: 'Armani',
@@ -68,7 +68,7 @@ const arrayMen = [
     {
         id: 6,
         category: 'casual',
-        img: 'dist\\menclothing6.0ac3b40b.webp',
+        img: '..\\dist\\menclothing6.0ac3b40b.webp',
         alt: 'hoodie',
         price: '$60',
         brand: 'Adidas',
@@ -77,7 +77,7 @@ const arrayMen = [
     {
         id: 7,
         category: 'sport',
-        img: 'dist\\menclothing7.4b41d7c1.webp',
+        img: '..\\dist\\menclothing7.4b41d7c1.webp',
         alt: 'sport',
         price: '$60',
         brand: 'Fila',
@@ -86,7 +86,7 @@ const arrayMen = [
     {
         id: 8,
         category: 'casual',
-        img: 'dist\\menclothing8.acd9b327.webp',
+        img: '..\\dist\\menclothing8.acd9b327.webp',
         alt: 'jacket',
         price: '$60',
         brand: 'Nike',
@@ -120,7 +120,7 @@ const arrayWomen = [
     {
         id: 1,
         category: 'swimwear',
-        img: 'dist\\womenclothing1.6cbb6a3c.webp',
+        img: '..\\dist\\womenclothing1.6cbb6a3c.webp',
         alt: 'swimwear',
         price: '$60',
         brand: 'Zara',
@@ -129,7 +129,7 @@ const arrayWomen = [
     {
         id: 2,
         category: 'formal',
-        img: 'dist\\womenclothing2.8b35b446.webp',
+        img: '..\\dist\\womenclothing2.8b35b446.webp',
         alt: 'dress',
         price: '$60',
         brand: 'Prada',
@@ -138,7 +138,7 @@ const arrayWomen = [
     {
         id: 3,
         category: 'casual',
-        img: 'dist\\womenclothing3.a5ccb2ac.webp',
+        img: '..\\dist\\womenclothing3.a5ccb2ac.webp',
         alt: 'jacket',
         price: '$60',
         brand: 'Prada',
@@ -147,7 +147,7 @@ const arrayWomen = [
     {
         id: 4,
         category: 'footwear',
-        img: 'dist\\womenclothing4.6d7cecf9.webp',
+        img: '..\\dist\\womenclothing4.6d7cecf9.webp',
         alt: 'sneakers',
         price: '$60',
         brand: 'Nike',
@@ -156,7 +156,7 @@ const arrayWomen = [
     {
         id: 5,
         category: 'accessories',
-        img: 'dist\\womenclothing5.1a69849e.webp',
+        img: '..\\dist\\womenclothing5.1a69849e.webp',
         alt: 'accessories',
         price: '$60',
         brand: 'Chanel',
@@ -165,7 +165,7 @@ const arrayWomen = [
     {
         id: 6,
         category: 'casual',
-        img: 'dist\\womenclothing6.f0e1a274.webp',
+        img: '..\\dist\\womenclothing6.f0e1a274.webp',
         alt: 'coat',
         price: '$60',
         brand: 'Armani',
@@ -174,7 +174,7 @@ const arrayWomen = [
     {
         id: 7,
         category: 'casual',
-        img: 'dist\\womenclothing7.ad8d5908.webp',
+        img: '..\\dist\\womenclothing7.ad8d5908.webp',
         alt: 'jacket',
         price: '$60',
         brand: 'Armani',
@@ -183,7 +183,7 @@ const arrayWomen = [
     {
         id: 8,
         category: 'casual',
-        img: 'dist\\womenclothing8.8a89324a.webp',
+        img: '..\\dist\\womenclothing8.8a89324a.webp',
         alt: 'jacket',
         price: '$60',
         brand: 'Nike',
