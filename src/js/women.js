@@ -1,7 +1,6 @@
 const clothingGrid = document.querySelector('.clothing__products__container__rightGrid-grid')
 
 window.addEventListener('DOMContentLoaded', () => {
-    displayMenItems(arrayMen)
     displayWomenItems(arrayWomen)
 })
 
