@@ -19,8 +19,6 @@ function displaySlides() {
         slideIndex = 1;
     }
 
-
-    
     for (i = 0; i < dots.length; i++) {
         dots[i].className = dots[i].className.replace('active', '');
     }
