@@ -110,10 +110,10 @@
                 .clothing__products__gridItem {
                     max-width: 300px;
                     max-height: 400px;
-                    border: 2px solid $offBlack;
                     border-radius: .5em;
                     transition: 250ms ease;
                     position: relative;
+                    box-shadow: .25rem .5rem 2rem #000;
 
                     img {
                         width: 100%;
@@ -136,7 +136,6 @@
 
                         a {
                             text-decoration: none;
-                            // color: #fff;
                         }
 
                         .options_top {
