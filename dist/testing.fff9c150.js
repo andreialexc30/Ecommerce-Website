@@ -117,32 +117,83 @@ parcelRequire = (function (modules, cache, entry, globalName) {
   }
 
   return newRequire;
-})({"js/slider.js":[function(require,module,exports) {
-var slideIndex = 0;
-displaySlides(slideIndex); // Displays slides in carousel
+})({"js/testing.js":[function(require,module,exports) {
+var menu = [{
+  id: 1,
+  category: 'accessories',
+  img: 'menclothing1.09ed23d3.webp',
+  alt: 'accessories',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 2,
+  category: 'casual',
+  img: 'menclothing2.034c99ef.webp',
+  alt: 'shirt',
+  price: '$60',
+  brand: 'Puma',
+  offer: '10% Discount'
+}, {
+  id: 3,
+  category: 'formal',
+  img: 'menclothing3.1dc1c705.webp',
+  alt: 'suit',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 4,
+  category: 'accessories',
+  img: 'menclothing4.6e65cc79.webp',
+  alt: 'sneakers',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}, {
+  id: 5,
+  category: 'formal',
+  img: 'menclothing5.86aeaf2a.webp',
+  alt: 'formal',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 6,
+  category: 'casual',
+  img: 'menclothing6.0ac3b40b.webp',
+  alt: 'hoodie',
+  price: '$60',
+  brand: 'Adidas',
+  offer: '10% Discount'
+}, {
+  id: 7,
+  category: 'sport',
+  img: 'menclothing7.4b41d7c1.webp',
+  alt: 'sport',
+  price: '$60',
+  brand: 'Fila',
+  offer: '10% Discount'
+}, {
+  id: 8,
+  category: 'casual',
+  img: 'menclothing8.acd9b327.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}];
+var clothingGrid = document.querySelector('.clothing__products__container__rightGrid-grid');
+window.addEventListener('DOMContentLoaded', function () {
+  displayClothingItems(menu);
+});
 
-function displaySlides() {
-  var i;
-  var slides = document.getElementsByClassName("img-sliderpromo");
-  var dots = document.getElementsByClassName("dot"); // Increments each slide and sets their display to none
-
-  for (i = 0; i < slides.length; i++) {
-    slides[i].style.display = 'none';
-  }
-
-  slideIndex++; // Resets the carousel once it goes past the number of images in it
-
-  if (slideIndex > slides.length) {
-    slideIndex = 1;
-  }
-
-  for (i = 0; i < dots.length; i++) {
-    dots[i].className = dots[i].className.replace('active', '');
-  }
-
-  slides[slideIndex - 1].style.display = 'block';
-  dots[slideIndex - 1].className += ' active';
-  setTimeout(displaySlides, 10000);
+function displayClothingItems(items) {
+  var displayItems = items.map(function (item) {
+    return "\n        <div class=\"clothing__products__gridItem\">\n            <img src=".concat(item.img, " alt=").concat(item.alt, ">\n            <div class=\"clothing__products__gridItem-display_options\">\n                <div class=\"options_top\">\n                    <span class=\"product__options top-options\">").concat(item.price, "</span>\n                    <span class=\"product__options top-options\">").concat(item.brand, "</span>\n                    <span class=\"product__options top-options\">").concat(item.offer, "</span>\n                </div>\n                <div class=\"options_bottom\">\n                    <a href=\"#\" class=\"product__options bottom-options\">View</a>\n                </div>\n            </div>\n        </div>");
+  });
+  displayItems = displayItems.join('');
+  clothingGrid.innerHTML = displayItems;
 }
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
@@ -172,7 +223,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55753" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55366" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
@@ -348,5 +399,5 @@ function hmrAcceptRun(bundle, id) {
     return true;
   }
 }
-},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/slider.js"], null)
-//# sourceMappingURL=/slider.d16eec5e.js.map
+},{}]},{},["../node_modules/parcel-bundler/src/builtins/hmr-runtime.js","js/testing.js"], null)
+//# sourceMappingURL=/testing.fff9c150.js.map

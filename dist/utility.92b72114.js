@@ -128,6 +128,157 @@ var navMenu = document.getElementById('nav-ul');
 hamburger.addEventListener('click', function () {
   navMenu.classList.toggle('show');
 });
+var arrayMen = [{
+  id: 1,
+  category: 'accessories',
+  img: 'menclothing1.09ed23d3.webp',
+  alt: 'accessories',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 2,
+  category: 'casual',
+  img: 'menclothing2.034c99ef.webp',
+  alt: 'shirt',
+  price: '$60',
+  brand: 'Puma',
+  offer: '10% Discount'
+}, {
+  id: 3,
+  category: 'formal',
+  img: 'menclothing3.1dc1c705.webp',
+  alt: 'suit',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 4,
+  category: 'footwear',
+  img: 'menclothing4.6e65cc79.webp',
+  alt: 'sneakers',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}, {
+  id: 5,
+  category: 'formal',
+  img: 'menclothing5.86aeaf2a.webp',
+  alt: 'formal',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 6,
+  category: 'casual',
+  img: 'menclothing6.0ac3b40b.webp',
+  alt: 'hoodie',
+  price: '$60',
+  brand: 'Adidas',
+  offer: '10% Discount'
+}, {
+  id: 7,
+  category: 'sport',
+  img: 'menclothing7.4b41d7c1.webp',
+  alt: 'sport',
+  price: '$60',
+  brand: 'Fila',
+  offer: '10% Discount'
+}, {
+  id: 8,
+  category: 'casual',
+  img: 'menclothing8.acd9b327.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}];
+var arrayWomen = [{
+  id: 1,
+  category: 'swimwear',
+  img: 'womenclothing1.6cbb6a3c.webp',
+  alt: 'swimwear',
+  price: '$60',
+  brand: 'Zara',
+  offer: '10% Discount'
+}, {
+  id: 2,
+  category: 'formal',
+  img: 'womenclothing2.8b35b446.webp',
+  alt: 'dress',
+  price: '$60',
+  brand: 'Prada',
+  offer: '10% Discount'
+}, {
+  id: 3,
+  category: 'casual',
+  img: 'womenclothing3.a5ccb2ac.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Prada',
+  offer: '10% Discount'
+}, {
+  id: 4,
+  category: 'footwear',
+  img: 'womenclothing4.6d7cecf9.webp',
+  alt: 'sneakers',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}, {
+  id: 5,
+  category: 'accessories',
+  img: 'womenclothing5.1a69849e.webp',
+  alt: 'accessories',
+  price: '$60',
+  brand: 'Chanel',
+  offer: '10% Discount'
+}, {
+  id: 6,
+  category: 'casual',
+  img: 'womenclothing6.f0e1a274.webp',
+  alt: 'coat',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 7,
+  category: 'casual',
+  img: 'womenclothing7.ad8d5908.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Armani',
+  offer: '10% Discount'
+}, {
+  id: 8,
+  category: 'casual',
+  img: 'womenclothing8.8a89324a.webp',
+  alt: 'jacket',
+  price: '$60',
+  brand: 'Nike',
+  offer: '10% Discount'
+}];
+var clothingGrid = document.querySelector('.clothing__products__container__rightGrid-grid');
+window.addEventListener('DOMContentLoaded', function () {
+  displayMenItems(arrayMen);
+  displayWomenItems(arrayWomen);
+});
+
+function displayMenItems(items) {
+  var displayItems = items.map(function (men) {
+    return "\n        <div class=\"clothing__products__gridItem\">\n            <img src=".concat(men.img, " alt=").concat(men.alt, ">\n            <div class=\"clothing__products__gridItem-display_options\">\n                <div class=\"options_top\">\n                    <span class=\"product__options top-options\">").concat(men.price, "</span>\n                    <span class=\"product__options top-options\">").concat(men.brand, "</span>\n                    <span class=\"product__options top-options\">").concat(men.offer, "</span>\n                </div>\n                <div class=\"options_bottom\">\n                    <a href=\"#\" class=\"product__options bottom-options\">View</a>\n                </div>\n            </div>\n        </div>");
+  });
+  displayItems = displayItems.join('');
+  clothingGrid.innerHTML = displayItems;
+}
+
+function displayWomenItems(items) {
+  var displayItems = items.map(function (women) {
+    return "\n        <div class=\"clothing__products__gridItem\">\n            <img src=".concat(women.img, " alt=").concat(women.alt, ">\n            <div class=\"clothing__products__gridItem-display_options\">\n                <div class=\"options_top\">\n                    <span class=\"product__options top-options\">").concat(women.price, "</span>\n                    <span class=\"product__options top-options\">").concat(women.brand, "</span>\n                    <span class=\"product__options top-options\">").concat(women.offer, "</span>\n                </div>\n                <div class=\"options_bottom\">\n                    <a href=\"#\" class=\"product__options bottom-options\">View</a>\n                </div>\n            </div>\n        </div>");
+  });
+  displayItems = displayItems.join('');
+  clothingGrid.innerHTML = displayItems;
+}
 },{}],"../node_modules/parcel-bundler/src/builtins/hmr-runtime.js":[function(require,module,exports) {
 var global = arguments[3];
 var OVERLAY_ID = '__parcel__error__overlay__';
@@ -156,7 +307,7 @@ var parent = module.bundle.parent;
 if ((!parent || !parent.isParcelRequire) && typeof WebSocket !== 'undefined') {
   var hostname = "" || location.hostname;
   var protocol = location.protocol === 'https:' ? 'wss' : 'ws';
-  var ws = new WebSocket(protocol + '://' + hostname + ':' + "60549" + '/');
+  var ws = new WebSocket(protocol + '://' + hostname + ':' + "55753" + '/');
 
   ws.onmessage = function (event) {
     checkedAssets = {};
